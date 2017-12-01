@@ -1,0 +1,132 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "github:slarson62/ng-selectize",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "github:slarson62/ng-selectize",
+        "spec": "github:slarson62/ng-selectize",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:slarson62/ng-selectize.git",
+          "sshUrl": "git+ssh://git@github.com/slarson62/ng-selectize.git",
+          "httpsUrl": "git+https://github.com/slarson62/ng-selectize.git",
+          "gitUrl": "git://github.com/slarson62/ng-selectize.git",
+          "shortcut": "github:slarson62/ng-selectize",
+          "directUrl": "https://raw.githubusercontent.com/slarson62/ng-selectize/master/package.json"
+        }
+      },
+      "/Users/shawnlarson/Documents/workspace/Bodhala/bodhala-firm-ui-dev"
+    ]
+  ],
+  "_from": "slarson62/ng-selectize",
+  "_id": "ng-selectize@1.1.0",
+  "_inCache": true,
+  "_location": "/ng-selectize",
+  "_phantomChildren": {
+    "tslib": "1.8.0"
+  },
+  "_requested": {
+    "raw": "github:slarson62/ng-selectize",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "github:slarson62/ng-selectize",
+    "spec": "github:slarson62/ng-selectize",
+    "type": "hosted",
+    "hosted": {
+      "type": "github",
+      "ssh": "git@github.com:slarson62/ng-selectize.git",
+      "sshUrl": "git+ssh://git@github.com/slarson62/ng-selectize.git",
+      "httpsUrl": "git+https://github.com/slarson62/ng-selectize.git",
+      "gitUrl": "git://github.com/slarson62/ng-selectize.git",
+      "shortcut": "github:slarson62/ng-selectize",
+      "directUrl": "https://raw.githubusercontent.com/slarson62/ng-selectize/master/package.json"
+    }
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git://github.com/slarson62/ng-selectize.git#fe5fef5644ac7fa97e128192e02398c50dd18f0a",
+  "_shasum": "9ea22baa44f471becaa9f749673e88fae4f812c4",
+  "_shrinkwrap": null,
+  "_spec": "github:slarson62/ng-selectize",
+  "_where": "/Users/shawnlarson/Documents/workspace/Bodhala/bodhala-firm-ui-dev",
+  "angular-cli": {},
+  "author": {
+    "name": "Nicholas Azar"
+  },
+  "bugs": {
+    "url": "https://github.com/NicholasAzar/ng-selectize/issues"
+  },
+  "dependencies": {
+    "@angular/common": "^4.2.4",
+    "@angular/compiler": "^4.2.4",
+    "@angular/core": "^4.2.4",
+    "@angular/forms": "^4.2.4",
+    "@angular/platform-browser": "^4.2.4",
+    "@angular/platform-browser-dynamic": "^4.2.4",
+    "core-js": "^2.4.1",
+    "jquery": "^3.1.1",
+    "lodash.clonedeep": "^4.5.0",
+    "rollup": "^0.41.4",
+    "rxjs": "^5.4.2",
+    "zone.js": "^0.8.14"
+  },
+  "description": "Angular (2,4,...) directive for selectize.js",
+  "devDependencies": {
+    "@angular/compiler-cli": "^4.2.4",
+    "@types/jquery": "^2.0.34",
+    "@types/node": "^6.0.88",
+    "@types/selectize": "^0.12.28",
+    "codelyzer": "^3.1.1",
+    "cpx": "^1.5.0",
+    "renamer": "^0.6.1",
+    "ts-node": "~3.2.0",
+    "tslint": "~5.3.2",
+    "typescript": "~2.3.3",
+    "uglify-js": "^2.7.5"
+  },
+  "gitHead": "fe5fef5644ac7fa97e128192e02398c50dd18f0a",
+  "homepage": "http://hnpm ttps://github.com/NicholasAzar/ng-selectize#readme",
+  "keywords": [
+    "angular2-selectize",
+    "angular-selectize",
+    "ng2-selectize",
+    "ng-selectize",
+    "angular2",
+    "selectize",
+    "angular",
+    "ng2",
+    "directive",
+    "component",
+    "select"
+  ],
+  "license": "MIT",
+  "name": "ng-selectize",
+  "optionalDependencies": {},
+  "private": true,
+  "readme": "# ng-selectize\n\n[![npm version](https://badge.fury.io/js/ng-selectize.svg)](https://badge.fury.io/js/ng-selectize)\n\nAngular (2,4,...) component for [selectize.js](https://selectize.github.io/selectize.js/)\n\n[Hosted Example Site](https://nicholasazar.github.io/ng-selectize)\n\n\n## Including within existing angular-cli project\n1. `npm i --save ng-selectize jquery selectize`\n2. Add the following to the styles array within `.angular-cli.json`:\n\t```javascript\n\t\n    \"../node_modules/selectize/dist/css/selectize.css\",\n    \"../node_modules/selectize/dist/css/selectize.{your chosen theme}.css\"\n    ```\n    (the semantic-ui theme has been added to ng-selectize/selectize/selectize.semantic.css if needed)\n3. Add the following to the scripts array within `.angular-cli.json`\n\t```javascript\n\t\"../node_modules/jquery/dist/jquery.min.js\",\n\t\"../node_modules/ng-selectize/selectize/selectize.standalone.js\" (or take from /node_modules/selectize/...)\n\t```\n\n3. Import module within applicable `@NgModule`:\n\t```javascript\n\timport {NgSelectizeModule} from 'ng-selectize';\n\timports: [..., NgSelectizeModule, ...],\n\t```\n4. Use within template: `<ng-selectize [config]=\"...\" [options] = \"...\" {other-attributes}></ng-selectize>`\n \n## Using with SystemJS\nSee [Issue #28](https://github.com/NicholasAzar/ng-selectize/issues/28)\n \n## Running the demo\n ```javascript\n \n git pull git@github.com:NicholasAzar/ng-selectize-demo.git\n cd ng-selectize-demo\n npm i\n npm start\n // navigate to localhost:4200\n ```\n\n## Docs\nThe docs directory within this repo is the result of `ng build --prod --aot` from the [ng-selectize-demo](https://github.com/NicholasAzar/ng-selectize-demo) repository. It can be accessed from the hosted example site above.\n\n## Attributes\n| Attribute | Type | Default | Description | Implemented |\n| --- | --- | --- | --- | --- |\n| config | Object | null | Selectize config | Yes |\n| options | Array | null | Available options to select from | Yes |\n| placeholder | String | '' | Placeholder text to be displayed. Is overridden if hasOptionsPlaceholder/noOptionsPlaceholder are non-null | Yes |\n| noOptionsPlaceholder | String | '' | Placeholder text to be displayed when no options are available | Yes |\n| hasOptionsPlaceholder | String | '' | Placeholder text to be displayed when options are available | Yes |\n| enabled | Boolean | true | Enables the input field when true, disabled otherwise | Yes |\n| formControl | FormControl | null | Form control field to be used to set value and/or validation. | Yes |\n| errorClass | String | 'has-error' | CSS Class to be added to the field when  | Yes |\n| optionGroups | Object | null | Organize options within groups | Yes |\n\n## Included Selectize Plugins\n| Name | Options | Description |\n| --- | --- | --- |\n| dropdown_direction | {'auto', 'up', 'down'} | Control the direction in which the dropdown opens. |\n\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NicholasAzar/ng-selectize.git"
+  },
+  "scripts": {
+    "build": "npm run clean && npm run transpile && npm run package && npm run minify && npm run copy",
+    "clean": "rimraf .tmp && rimraf dist",
+    "copy": "npm run copy:package && npm run copy:readme && npm run copy:assets:selectize",
+    "copy:assets:selectize": "cpx \"src/selectize/*\" dist/selectize",
+    "copy:package": "cpx package-dist.json dist && renamer --find package-dist.json --replace package.json ./dist/*",
+    "copy:readme": "cpx README.md dist",
+    "ct": "npm run clean && npm run transpile",
+    "minify": "uglifyjs dist/bundles/ng-selectize.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/ng-selectize.umd.min.js",
+    "package": "rollup -c",
+    "transpile": "ngc"
+  },
+  "version": "1.1.0"
+}
